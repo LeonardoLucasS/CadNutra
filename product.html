@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Adicionando um arquivo css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Nutracêltico</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container animated bounceInLeft">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="https://stanescos.github.io/nutraceuticals/index">Home</a>
+          <a class="nav-item nav-link active" href="./nutraceuticals/product">Product <span class="sr-only">(current)</span></a>
+        </div>
+      </div>
+    </nav>
+    <h1 class="brand"><span>Nutraceuticals</span> Insert</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Build 0.9</h3>
+        <ul>
+          <li><i class="fa fa-user"></i> Leonardo Stanescos</li>
+          <li><i class="fa fa-envelope"></i> leostanescos@hotmail.com</li>
+          <br>
+          <li><i class="fa fa-user"></i> Leonardo Ferreira</li>
+          <li><i class="fa fa-envelope"></i> leonardo.lucas@unesp.br</li>
+        </ul>
+      </div>
+
+      <!-- Primary Info -->
+    <div class="insert">
+    <div class="alert">Product added.</div>
+    <h3>Primary Info</h3>
+    <form id="product_form">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name">
+          </p>
+          <p>
+            <label>Know as</label>
+            <input type="text" name="knowas" id="knowas">
+          </p>
+          <p>
+            <label>Origin</label>
+            <input type="text" name="origin" id="origin">
+          </p>
+          <p>
+            <label>Category</label>
+            <input type="text" name="category" id="category">
+          </p>
+          <p>
+            <label>History</label>
+            <input type="text" name="history" id="history">
+          </p>
+          <p>
+            <label>Source</label>
+            <input type="text" name="source" id="source">
+          </p>
+          <p>
+            <label>Type</label>
+            <input type="text" name="type" id="type">
+          </p>
+          <p>
+            <label>Refer</label>
+            <input type="text" name="refer" id="refer">
+          </p>
+          <p>
+            <label>Examine</label>
+            <input type="text" name="examine" id="examine">
+          </p>
+          <p>
+            <label>Description</label>
+            <input type="text" name="desc" id="desc">
+          </p>
+          
+    
+        <!-- Warnings -->
+    <h3>Warnings</h3>
+    <br>
+         <p>
+            <label>Toxicity</label>
+            <input type="text" name="toxicity" id="toxicity">
+        </p>
+        <p>
+            <label>Side effects</label>
+            <input type="text" name="side_efe" id="side_efe">
+        </p>
+        <p>
+            <label>Warning for people with</label>
+            <input type="text" name="warn_fpw" id="warn_fpw">
+        </p>
+        <p>
+            <label>Age range</label>
+            <input type="text" name="age_range" id="age_range">
+        </p>
+        <p>
+          <label>Why be careful</label>
+          <input type="text" name="wbc" id="wbc">
+      </p>
+      <p class="full">
+        <button type="submit" class="submit">Submit Product</button>
+      </p>
+      </form>
+
+      <h3>ProFinal</h3>
+      <br>
+
+      <form id="proFinal_form">
+        <p>
+          <label>Products</label>
+          <select name="products" id="selectProduct">
+          </select> 
+        </p>
+      <p>
+        <label>Topic</label>
+        <select name="topic" id ="selectTopic">
+        </select> 
+      </p>
+      <p>
+        <label>Use</label>
+        <select name="use" id ='selectUse'>
+        </select> 
+      </p>
+      <p>
+        <label>Evidence</label>
+        <select name="evidence" id = "selectEvidence">
+          <option value ="0"></option>
+          <option value ="1">Low</option>
+          <option value ="2">Medium</option>
+          <option value ="3">High</option>
+          <option value ="4">Very High</option>
+        </select> 
+      </p>
+      <p>
+        <label>Consistency</label>
+        <select name="consistency" id = "selectConsistency">
+          <option value ="0"></option>
+          <option value ="1">Low</option>
+          <option value ="2">Medium</option>
+          <option value ="3">High</option>
+          <option value ="4">Very High</option>
+        </select> 
+      </p>
+      <p>
+        <label>Efficiency</label>
+        <select name="efficiency" id = "selectEfficiency">
+          <option value ="0"></option>
+          <option value ="-3">-3</option>
+          <option value ="-2">-2</option>
+          <option value ="-1">-1</option>
+          
+          <option value ="1">1</option>
+          <option value ="2">2</option>
+          <option value ="3">3</option>
+        </select> 
+      </p>
+      <p>
+        <label>Suggestion</label>
+        <select name="suggestion" id = "selectSuggestion">
+          <option value ="1">Secondary</option>
+          <option value ="2">Primary</option>
+          <option value ="3">Core</option>
+        </select> 
+      </p>
+      
+      <p class="full">
+        <button type="submit" class="submitPF">Submit ProFinal</button>
+      </p>
+    </form>
+
+    </div>
+  </div>
+
+    <!-- <div class="container insert shadowbox mt-1">
+        <button type="button" class="resultbutton" data-toggle="button" aria-pressed="false" autocomplete="off" onclick="showtable()" id="showtable">Nutraceuticals</button>
+
+    <br>
+      <table class="table table-hover tableh mt-4" id="product_table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Know as</th>
+          </tr>
+        </thead>
+        <tbody id="product_row">
+    
+        </tbody>
+      </table>
+    
+    </div>  -->
+    </div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="product.js"></script>
+</body>
+</html>

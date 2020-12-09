@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylee.css">
+    
+    <title></title>
+  </head>
+  <body>
+    <div class="container animated bounceInLeft">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="https://stanescos.github.io/nutraceuticals/index">Home</a>
+            <a class="nav-item nav-link" href="https://stanescos.github.io/nutraceuticals/product">Product</a>
+            <a class="nav-item nav-link" href="https://stanescos.github.io/nutraceuticals/combo">Combo</a>
+            <a class="nav-item nav-link active" href="https://stanescos.github.io/nutraceuticals/forms">Form<span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
+    <h1 class="brand"><span>Nutraceuticals</span> Quiz</h1>
+      <!-- Default form subscription -->
+<form class="insert text-center border border-light p-5 shadowbox" action="" id="quiz_form">
+
+  <div class="form-group">
+    <h1></h1> <!-- NOVA PARTE AQUI -->
+    <!-- Name -->
+    <br><br>
+    <div class="tab">
+
+    <div class="row">
+      <div class="col-sm-5">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="client_name" placeholder="Name" name="client_name">
+      </div>
+
+    <!-- Email -->
+    <div class="col-sm-4">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="client_email" aria-describedby="emailHelp" placeholder="Enter email" name="client_email">
+    </div>
+
+
+  <!-- Date -->
+  <div class="col-sm-3">
+    <label for="formGroupExampleInput">Date of Birth</label>
+    <input type="Date" class="form-control" id="client_date" name="client_date" placeholder="Date">
+  </div>
+  </div>
+<br>
+</div>
+  <!-- Beneficios -->
+  <div class="tab"><div class="w-100 p-3 h-50 d-inline-block" style="background-color: #eee;">What benefits are you looking for?</div>
+  <label for="formGroupExampleInput"></label><br>
+  <div class="row text-left">
+    <div class="col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits1" value="Aesthetics">
+        <label class="custom-control-label"  for="client_benefits1">Aesthetics</label>
+        <br>
+       <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5 col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits1" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits2" value="Anti-Inflammatory">
+        <label class="custom-control-label"  for="client_benefits2">Anti-Inflammatory</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits2" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits3" value="Anti-Oxidant">
+        <label class="custom-control-label"  for="client_benefits3">Anti-Oxidant</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits3" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits4" value="Anti-Carcinogenic">
+      <label class="custom-control-label"  for="client_benefits4">Anti-Carcinogenic</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits4" name="rclient_benefits"> <label>5</label></span>
+  </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits5" value="Bone and Joint Health">
+      <label class="custom-control-label"  for="client_benefits5">Bone and Joint Health</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits5" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits6" value="General Health" name="rclient_benefits">
+      <label class="custom-control-label"  for="client_benefits6">General Health</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits6" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits7" value="Hormone Regulation">
+      <label class="custom-control-label"  for="client_benefits7">Hormone Regulation</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits7" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits8" value="Pregnancy Support">
+      <label class="custom-control-label"  for="client_benefits8">Pregnancy Support</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits8" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits9" value="Weight Management">
+      <label class="custom-control-label"  for="client_benefits9">Weight Management</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits9" name="rclient_benefits"> <label>5</label></span>
+    </div>
+  </div>
+
+    <div class="col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits10" value="Cardiovascular Health">
+        <label class="custom-control-label"  for="client_benefits10">Cardiovascular Health</label>
+        <br>
+       <span class="rangeh"> <label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits10" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits11" value="Cognitive Function and Brain Health">
+        <label class="custom-control-label"  for="client_benefits11">Cognitive Function and Brain Health</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits11" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits12" value="Digestive Health">
+        <label class="custom-control-label"  for="client_benefits12">Digestive Health</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits12" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits13" value="Diuretic">
+        <label class="custom-control-label"  for="client_benefits13">Diuretic</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits13" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits14" value="Immunity">
+        <label class="custom-control-label"  for="client_benefits14">Immunity</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits14" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits15" value="Libido and Sexual Health">
+        <label class="custom-control-label"  for="client_benefits15">Libido and Sexual Health</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits15" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits16" value="Sleep Regulation">
+        <label class="custom-control-label"  for="client_benefits16">Sleep Regulation</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits16" name="rclient_benefits"> <label>5</label></span>
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits17" value="Performance Enhace">
+        <label class="custom-control-label"  for="client_benefits17">Performance Enhace</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits17" name="rclient_benefits"> <label>5</label></span>
+      </div>
+          <div class="custom-control custom-checkbox">
+      <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits18" value="NutrientEnergy Metabolism">
+      <label class="custom-control-label"  for="client_benefits18">Nutrient / Energy Metabolism</label>
+      <br>
+      <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits18" name="rclient_benefits"> <label>5</label></span>
+    </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="custom-control custom-checkbox">
+        <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits19" value="Energy and Mood">
+        <label class="custom-control-label"  for="client_benefits19">Energy and Mood</label>
+        <br>
+        <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits19" name="rclient_benefits"> <label>5</label></span>      
+      </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits20" value="Eye Health">
+          <label class="custom-control-label"  for="client_benefits20">Eye Health</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits20" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits21" value="Fat Loss">
+          <label class="custom-control-label"  for="client_benefits21">Fat Loss</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits21" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits22" value="Fatigue Prevention">
+          <label class="custom-control-label"  for="client_benefits22">Fatigue Prevention</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits22" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits23" value="Muscle Gain">
+          <label class="custom-control-label"  for="client_benefits23">Muscle Gain</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits23" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits24" value="Muscle Health">
+          <label class="custom-control-label"  for="client_benefits24">Muscle Health</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits24" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits25" value="InsulinGlucose Metabolism">
+          <label class="custom-control-label"  for="client_benefits25">Insulin / Glucose Metabolism</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits25" name="rclient_benefits"> <label>5</label></span>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input class="custom-control-input" type="checkbox" name="client_benefits" id="client_benefits26" value="Liver Health">
+          <label class="custom-control-label"  for="client_benefits26">Liver Health</label>
+          <br>
+          <span class="rangeh"><label for="formGroupExampleInput">1</label> <input type="range" class="custom-range col-sm-5" disabled value="3"  min="1" max="5" id="rclient_benefits26" name="rclient_benefits"> <label>5</label></span>
+        </div>
+    </div>
+  </div>
+
+<br><br>
+</div>
+
+<!--Allergy-->
+<div class="tab"><div class="w-100 p-3 h-50 d-inline-block" style="background-color: #eee;">Are you allergic to any of the sources listed below?</div>
+<label for="formGroupExampleInput"></label>
+<div class="row text-left mt-1">
+<div class="col-sm-4">
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Walnuts" id="client_allergy1">
+  <label class="custom-control-label" for="client_allergy1">Walnuts</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Milk" id="client_allergy2">
+  <label class="custom-control-label" for="client_allergy2">Milk</label>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Soy" id="client_allergy3">
+  <label class="custom-control-label" for="client_allergy3">Soy</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Fish" id="client_allergy4">
+  <label class="custom-control-label" for="client_allergy4">Fish</label>
+</div>
+</div>
+<div class="col-sm-4">
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Peanuts" id="client_allergy5">
+  <label class="custom-control-label" for="client_allergy5">Peanuts</label>
+</div>
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_allergy" value="Guarana" id="client_allergy6">
+  <label class="custom-control-label" for="client_allergy6">Guaraná</label>
+</div>
+</div>
+</div>
+</div>
+
+<!--Vegan-->
+<div class="tab"><div class="w-100 p-3 h-25 d-inline-block" style="background-color: #eee;">Specific diets:</div>
+<label for="formGroupExampleInput"></label>
+<div class="row text-center mt-1">
+<div class="col-sm-1">
+<div class="custom-control custom-checkbox">
+  <input class="custom-control-input" type="checkbox" name="client_diet" value="Vegan" id="client_diet1">
+  <label class="custom-control-label align-text-top" for="client_diet1">Vegan</label>
+</div>
+</div>
+</div>
+
+<!-- -->
+<div class="w-100 p-3 h-25 d-inline-block mt-5" style="background-color: #eee;">Do you have any preference regarding the price or evidence of the products?</div>
+<div class="row text-center mt-5">
+  <div class="col-sm-4">
+    <label for="custom-control-label">Price</label><br>
+  <span class=""><label for="custom-control-input">$</label> <input type="range" class="custom-range col-sm-3" value="4"  min="1" max="4" id="rprice" name="rprice"> <label>$$$$</label></span>
+  </div>
+  <div class="col-sm-4">
+    <label for="custom-control-label">Evidence</label><br>
+  <span class=""><label for="custom-control-input">Medium</label> <input type="range" class="custom-range col-sm-3" value="2"  min="1" max="3" id="revidence" name="revidence"> <label>Very High</label></span>
+  </div>
+  <div class="col-sm-4">
+    <label for="custom-control-label">Efficiency</label><br>
+  <span class=""><label for="custom-control-input">★★</label> <input type="range" class="custom-range col-sm-3" value="2"  min="2" max="5" id="refficiency" name="refficiency"> <label>★★★★★</label></span>
+  </div>
+  </div>
+<!-- Sign in button -->
+
+   <!-- <button class="btn btn-info mt-3" type="submit" id="submitBtn">Submit</button> -->
+
+    </div>
+</div>
+
+
+ <!-- AAAAAAAAAAAAAAAAAAAA -->
+<div style="overflow:auto;">
+  <div style="float:right;">
+    <button type="button" class="btn btn-primary" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    <button type="button" class="btn btn-primary" id="nextBtn" onclick="nextPrev(1)">Next</button>
+    <a href="#aaa"><button class="btn btn-primary" type="submit" id="submitBtn" onclick="nextPrev(0)">Submit</button></a>
+  </div>
+</div>
+
+<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+ <!-- AAAAAAAAAAAAAAAA -->
+
+</form>
+
+<!-- -->
+<div class="tablec mt-1">
+<div class="container insert">
+  <h4>Suggested compound substances:</h4>
+<br>
+  <table class="table table-hover" id="result_table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">compound substances</th>
+      </tr>
+    </thead>
+    <tbody id="combo_row">
+
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+<!-- -->
+
+<div class="tableh mt-1">
+<div class="container insert" id="aaa">
+  <h4>Suggested products</h4>
+<br>
+  <table class="table table-hover" id="result_table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Know as</th>
+        <th scope="col">Price</th>
+        <th scope="col">Outcome</th>
+      </tr>
+    </thead>
+    <tbody id="result_row">
+
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+
+<h4 class="text-right mt-3">Build 0.9</h4>
+
+
+</div>
+
+
+
+<!-- Default form subscription -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="comparition.js"></script>
+    <script src="jss.js"></script>
+  </body>
+</html>
