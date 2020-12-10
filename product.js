@@ -105,7 +105,9 @@ function submitFormProfinal(e) {
   var efficiency = $("#selectEfficiency").val();
   var suggestion = $("#selectSuggestion").val();
 
+  saveProfinal(product, topic, use, evidence, consistency, efficiency, suggestion);
 
+  document.getElementById('proFinal_form').reset();
 }
 
 // Function to get form values
@@ -150,7 +152,26 @@ async function saveProduct(name, knowas, origin, category, history, source, type
 
 async function saveProfinal(product, topic, use, evidence, consistency, efficiency, suggestion) {
   try {
-    
+    const response = await fetch(`${url}/profinal/create`, {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: 'post',
+      body: JSON.stringify({
+        product: product,
+        evidence: evidence,
+        use: use,
+        consistency: consistency,
+        topic: topic,
+        efficiency: efficiency,
+        suggestion: suggestion
+      })
+    });
+    const data = await response.json();
+    console.log(data)
+  }catch (error) {
+    console.log(error);
   }
 }
+
 
